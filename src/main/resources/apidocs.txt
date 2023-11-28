@@ -1,0 +1,73 @@
+endpoint: http://localhost:8080/book/savebook
+Request:
+{
+"id":"02",
+"author":"Ram",
+"isbn":"UUI23",
+"publishedDate":"23/02/1996",
+"genre":"5th"
+}
+Response:
+{
+"id":"02",
+"author":"Ram",
+"isbn":"UUI23",
+"publishedDate":"23/02/1996",
+"genre":"5th"
+}
+-----------------------------------------------
+endpoint: http://localhost:8080/book/getallbooks
+Response:
+[
+    {
+        "id": 1,
+        "genre": "5th",
+        "author": "dinkar",
+        "publishedDate": "23/02/1996",
+        "isbn": "UUI23"
+    },
+    {
+"id":"02",
+"author":"Ram",
+"isbn":"UUI23",
+"publishedDate":"23/02/1996",
+"genre":"5th"
+ }
+]
+
+-----------------------------------------------------------------------------
+
+endpoint: http://localhost:8080/book/getbookbyid/01
+Response:
+{
+    "id": 1,
+    "genre": "5th",
+    "author": "dinkar",
+    "publishedDate": "23/02/1996",
+    "isbn": "UUI23"
+}
+-----------------------------------------------------
+endpoint:http://localhost:8080/book/deleteid/01
+Response:
+your id has been deleted
+
+---------------------------
+endpoint: http://localhost:8080/book/updatebook
+
+Request:
+{
+"id":"01",
+"author":"dinkar pandey",
+"isbn":"UUI23",
+"publishedDate":"23/02/1996",
+"genre":"5th"
+}
+
+Response:
+{
+"id":"01",
+"author":"dinkar pandey",
+"isbn":"UUI23",
+"publishedDate":"23/02/1996",
+"genre":"5th"
+}
